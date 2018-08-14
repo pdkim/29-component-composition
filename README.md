@@ -17,3 +17,4 @@ https://github.com/pdkim/29-component-composition
 6. Double click any note.  It should open up the update form.
 7. Change any field in the note and press update note button.  You should be back to the original list and the specified note should be updated.
 8. Double click any note to update but press cancel instead.  It should show the list again and note should be the same.
+9. 
