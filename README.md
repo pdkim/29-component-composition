@@ -1,8 +1,8 @@
 #Travis
-
+[![Build Status](https://travis-ci.com/pdkim/29-component-composition.svg?branch=master)](https://travis-ci.com/pdkim/29-component-composition)
 
 #Heroku
-
+https://pk-31-component-composition.herokuapp.com/
 
 #Github
 https://github.com/pdkim/29-component-composition
