@@ -1,53 +1,19 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 29: To Do
-===
+#Travis
+[![Build Status](https://travis-ci.com/pdkim/29-component-composition.svg?branch=master)](https://travis-ci.com/pdkim/29-component-composition)
 
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas 
-  
-## Learning Objectives  
-* Students will learn about composition vs inheritance
-* Students will learn to compose react components using props
+#Heroku
+https://pk-31-component-composition.herokuapp.com/
 
-## Requirements  
- 
-#### Feature Tasks 
-Refactor and add the following components 
+#Github
+https://github.com/pdkim/29-component-composition
 
-###### NoteUpdateForm 
-Create a NoteUpdateForm component that inherits a note through props and onSubmit is able to update the App's state with an updated note.
 
-###### Refactor the NoteItem to have the following behavior
-If the user double clicks on the notes content it should switch to the Edit View  
-* Default view  
-  * Display the notes content and a delete button
-  * Display a delete button that will remove the Note from the application's state
-* Edit View 
-  * Show the NoteUpdateForm and a Cancel Button
-    * onSubmit or click of the cancel button in NoteUpdateForm it should switch back to the default view
-
-###### App Component Tree
-Your components should be nested in the following layout  
-``` 
-App
-  NoteCreateForm
-  NoteList
-    NoteItem
-      NoteUpdateForm
-```
-
-#### Test
-* Test NoteCreateForm
-  * Test your onChange handler
-  * Test your onSubmit handler
-* Test NoteItem
-  * Test the NoteItem's ability to remove a note from the App's state
-* Test NoteUpdateForm
-  * Test the NoteUpdatesForm's ability to update a note in the App's state
-
-#### Documentation  
-Write a description of the project in your README.md
+#Instructions
+1. Fork the repository
+2. ```npm i``` to install all dependencies
+3. ```npm run watch``` to start the application.
+4. Fill out the form and click submit.  You should have a new note created.  Submit multiple notes as you wish.
+5. Click the completed button.  The specific note should be removed from the list.
+6. Double click any note.  It should open up the update form.
+7. Change any field in the note and press update note button.  You should be back to the original list and the specified note should be updated.
+8. Double click any note to update but press cancel instead.  It should show the list again and note should be the same.
